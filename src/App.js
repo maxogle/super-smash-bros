@@ -2,6 +2,7 @@
 import './App.css';
 import Fighter from './components/Fighter';
 import FighterScreen from './components/FighterScreen'
+import SideNavigation from './components/SideNavigation';
 import { useState } from 'react';
 
 
@@ -12,7 +13,7 @@ const characters = [
   {name: 'Sheik', color: 'lightskyblue'},
   {name: 'Cloud', color: 'mediumseagreen'},
   {name: 'Falco', color: 'orange'},
-  {name: 'Samus', color: 'firebrick'},
+  {name: 'Byleth', color: 'firebrick'},
   {name: 'Link', color: 'yellow'},
 ]
 function App() {
@@ -30,7 +31,8 @@ function App() {
         })}
        
       </div>
-      <FighterScreen isVisible={visible} setVisible={setVisible} selectedCharacter={selectedCharacter}/>     
+      <FighterScreen isVisible={visible} setVisible={setVisible} selectedCharacter={selectedCharacter}/> 
+      <SideNavigation isVisible={visible} characters={characters} />   
     </div>
   );
 }
