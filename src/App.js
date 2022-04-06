@@ -9,7 +9,11 @@ const characters = [
   {name: 'Roy', color: 'red'},
   {name: 'fox', color: 'green'},
   {name: 'Ganondorf', color: 'purple'},
-  {name: 'Sheik', color: 'lightskyblue'}
+  {name: 'Sheik', color: 'lightskyblue'},
+  {name: 'Cloud', color: 'mediumseagreen'},
+  {name: 'Falco', color: 'orange'},
+  {name: 'Samus', color: 'firebrick'},
+  {name: 'Link', color: 'yellow'},
 ]
 function App() {
   const [visible, setVisible] = useState(false)
@@ -18,9 +22,9 @@ function App() {
     <div className="App">
       <h1>Fighters</h1>
       <div className="fighters-grid">
-        {characters.map((element, i) => {
+        {characters.map((element) => {
             return(
-              <Fighter name={element.name} color={element.color} img={''} setVisible={setVisible} setSelectedCharacter={setSelectedCharacter}/>
+              <Fighter name={element.name} color={element.color} setVisible={setVisible} setSelectedCharacter={setSelectedCharacter}/>
 
             )          
         })}
