@@ -40,3 +40,27 @@
   position: fixed;
   bottom: 0;
 }
+
+.name-fg{
+  font-size: 25em;
+  left: 8%;
+  font-family: 'Bebas Neue', cursive;
+
+}
+
+.name-bg {
+  font-size: 65em;
+  position: absolute;
+  top: -20%;
+  left: 0; 
+  z-index: -2;
+  font-family: 'Bebas Neue', cursive;
+  color: slategrey;
+}
+
+.char-portrait {
+  position: absolute;
+  right: -10%;
+  top: -10%;
+  z-index: -1;
+}
