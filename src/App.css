@@ -8,18 +8,18 @@
 
 .fighters-grid {
   display: flex;
+  gap: 8px;
   flex-wrap: wrap;
-  background-color: #ccc;
-  border: 1px solid #858585;
   border-radius: 5px;
   width: min-content;
-  min-width: 840px;
+  min-width: 864px;
   height: min-content;
+
 }
 .fighter {
   height: 200px;
   width: 200px; 
-  background-color: red;
+  border-radius: 5px;
   transition: transform 0.3s;
   background-size: cover;
   border: 5px solid transparent;
@@ -70,4 +70,19 @@
   right: 0;
   top: 0;
   z-index: 1;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: gold;
 }
+
+.char-nav {
+  transition: transform 0.3s;
+}
+
+
+.char-nav:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
