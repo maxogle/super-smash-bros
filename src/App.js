@@ -32,7 +32,7 @@ function App() {
        
       </div>
       <FighterScreen isVisible={visible} setVisible={setVisible} selectedCharacter={selectedCharacter}/> 
-      <SideNavigation isVisible={visible} characters={characters} />   
+      <SideNavigation isVisible={visible} characters={characters} setSelectedCharacter={setSelectedCharacter}/>   
     </div>
   );
 }
