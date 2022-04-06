@@ -7,14 +7,14 @@ import { useState } from 'react';
 
 
 const characters = [
-  {name: 'Roy', color: 'red'},
-  {name: 'fox', color: 'green'},
-  {name: 'Ganondorf', color: 'purple'},
-  {name: 'Sheik', color: 'lightskyblue'},
-  {name: 'Cloud', color: 'mediumseagreen'},
-  {name: 'Falco', color: 'orange'},
-  {name: 'Byleth', color: 'firebrick'},
-  {name: 'Link', color: 'yellow'},
+  {name: 'Roy', color: ['red', 'purple']},
+  {name: 'fox', color: ['green', 'brown']},
+  {name: 'Ganondorf', color: ['purple', 'gray']},
+  {name: 'Sheik', color: ['lightskyblue','green']},
+  {name: 'Cloud', color: ['mediumseagreen', 'gold']},
+  {name: 'Falco', color: ['orange', 'tan']},
+  {name: 'Byleth', color: ['blue', 'black']},
+  {name: 'Link', color: ['yellow', 'royalblue']},
 ]
 function App() {
   const [visible, setVisible] = useState(false)
